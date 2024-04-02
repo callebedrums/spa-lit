@@ -9,7 +9,7 @@ export class MyAppPage1 extends LitElement {
   @property({ type: String }) name = "";
 
   render() {
-    return html` <h1>Page 1. Hello ${this.name}!</h1> `;
+    return html` <h1>Page 1. Hello ${this.name || "World"}!</h1> `;
   }
 }
 
